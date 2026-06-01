@@ -9,5 +9,5 @@ def test_if_operands_is_created_with_factory():
     assert model_.left == 2 and model_.right == 7
 
 def test_if_operands_is_created_with_wrong_type():
-    model_ = operands_factory("hello world", False)
-    assert model_.left == "helo world" and model_.right == False
+    model_ = operands_factory("boom", 5.5)
+    assert model_.left == "boom" and model_.right == 5.5
